@@ -1,0 +1,269 @@
+ /* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section {
+     display: block;
+ }
+ body {
+     line-height: 1;
+ }
+ ol, ul {
+     list-style: none;
+ }
+ blockquote, q {
+     quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+     content: '';
+     content: none;
+ }
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ /* MAIN CSS */
+
+body {
+    background-image: url("https://internationaldigitalart.com/storage/2019/06/5-Ways-Your-Company-Can-Benefit-from-Working-with-a-Graphic-Designer-1080x675.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    color: black; 
+}
+
+#namecard {
+    background-color: rgba(5, 20, 50, 0.95);
+    width: 35%;
+    height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.card1 {
+    width: 48%;
+    height: 32%;
+    background-color: cyan;
+    overflow: hidden;
+    
+}
+
+.card2 {
+    width: 48%;
+    height: 32%;
+    background-color: #e59a1b;
+
+}
+
+.card3 {
+    width: 100%;
+    height: 32%;
+    background-color: #44a5ac;
+}
+
+.card4 {
+    width: 100%;
+    height: 32%;
+    background-color:#315a6e;
+    padding: 10px;
+    
+}
+
+.column {
+    width: 32.5%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+div {
+    position: relative;
+}
+
+div>.title {
+    position: absolute;
+    margin: 0;
+    padding: 0.3125rem;
+    font-size: 1rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(5, 20, 50, 0.55);
+    color: lightgoldenrodyellow;
+    text-transform: uppercase;
+}
+
+.card5 {
+    width: 100%;
+    height: 32%;
+    background-color: #bf4e3e;
+
+}
+
+.card7 {
+    width: 100%;
+    height: 32%;
+    background-color: #3b3e47;
+
+}
+
+.card6 {
+    width: 100%;
+    height: 66%;
+    background-color: burlywood;
+    overflow: hidden;
+}
+
+.card8 {
+    width: 100%;
+    height: 32%;
+    background-color: #04498c;
+
+}
+
+.card9 {
+    width: 48%;
+    height: 32%;
+    background-color: #f37832;
+
+}
+
+.card10 {
+    width: 48%;
+    height: 32%;
+    background-color: #0099d7;
+
+}
+
+.fa {
+   opacity: 0.75 !important;
+   font-size: 3.5rem !important;
+   text-align: center !important;
+   display: block !important;
+   margin-top: 1.5625rem !important;   
+}
+
+.embedpic {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.comment a {
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    font-weight: 500;
+}
+.row {
+    border-bottom: 1px solid lightgoldenrodyellow;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   margin-bottom: 0.7rem;
+}
+
+.row h2 {
+    color: lightgoldenrodyellow;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.row h3 {
+    color: lightgoldenrodyellow;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2rem;
+}
+.card6 img:hover {
+    filter: grayscale(100%);
+    transition-duration: 1s;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 1320px) {
+    div>.title {
+        font-size: 0.8rem;
+     }
+    #namecard{
+        width: 100%;
+        height: 70%;
+    }
+    .row{
+        height: 8%;
+    }
+    .row h2 {
+        font-size: 2rem;
+    }
+    .row h3 {
+        font-size: 1.2rem;
+    }
+    div>.title {
+        font-size: 1.5rem;
+     }
+     .comment{
+        font-size: 1.5rem;
+        }
+    }
+
+@media (max-width: 960px){
+    body { 
+        background: none;
+        background-color: rgba(5, 20, 50, 0.95);
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #namecard{
+    padding: 1rem;
+    }
+    .column{
+        width: 100%;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .comment{
+        font-size: 1.3rem;
+        }
+}
+
