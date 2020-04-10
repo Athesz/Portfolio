@@ -1,7 +1,8 @@
 body{
     background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
-    font-family:Libre Baskerville;
+    font-family: Libre Baskerville;
     color:#444349;
+    margin: 0 auto;
     }
 a {
     color:#bd806e;
@@ -34,7 +35,6 @@ header{
     color: white;
     text-transform: uppercase;
     font-size: 1.5 rem;
-
 }
 h1 {
     font-family:Great Vibes;
@@ -52,6 +52,7 @@ h2{
 .wrapper{
     width: 80vw;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
    justify-content: space-between;
 }
@@ -77,6 +78,7 @@ h2{
 }
 
 .dark{
+    width: 100vw;
     background-color:#606060;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -93,6 +95,47 @@ footer{
     color: #d2ba87;
     text-align: center;
     background-color:#606060;
+    width: 100vw;
 }
 
+/* MEDIA QUERY */
+@media (max-width: 1024px){
+    header{
+        background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #covertitle {
+        width: 70%;       
+       }
+       .title {
+          font-size: 1rem;
+    }
+    h1 {
+        font-size: 3rem;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    .picture{
+        width: 5rem;
+    }
+    .wrapper{
+        width: 100vw;
+
+    }
+    .column1{
+        width: 90%;
+        margin: 0 auto;
+        }
+    .column2{
+        width: 90%; 
+        margin: 0 auto;
+    }
+    .column3{
+        width: 80%;
+        margin: 0 auto;
+       
+    }
+}
 
